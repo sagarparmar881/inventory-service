@@ -15,6 +15,7 @@ public class InventoryServiceResponse {
             final ResponseCode responseCode,
             final Object responseObj) {
         ApiResponse apiResponse = new ApiResponse(
+                responseCode.getCode(),
                 responseCode.getMessage(),
                 responseObj);
         return new ResponseEntity<>(apiResponse, responseCode.getHttpStatus());

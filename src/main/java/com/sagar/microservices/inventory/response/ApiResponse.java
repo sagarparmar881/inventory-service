@@ -14,6 +14,14 @@ public class ApiResponse {
     /**
      * The message accompanying the response.
      */
+    @Schema(name = "code",
+            example = "3000",
+            description = "Code of API response")
+    private Integer code;
+
+    /**
+     * The message accompanying the response.
+     */
     @Schema(name = "message",
             example = "Operation successfull",
             description = "Description of API response")
