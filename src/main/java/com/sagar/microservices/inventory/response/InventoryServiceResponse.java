@@ -1,9 +1,9 @@
-package com.sagar.microservices.order.response;
+package com.sagar.microservices.inventory.response;
 
-import com.sagar.microservices.order.enums.ResponseCode;
+import com.sagar.microservices.inventory.enums.ResponseCode;
 import org.springframework.http.ResponseEntity;
 
-public class OrderServiceResponse {
+public class InventoryServiceResponse {
     /**
      * Generates a standardized API response with a message, status, and data.
      *
@@ -15,7 +15,6 @@ public class OrderServiceResponse {
             final ResponseCode responseCode,
             final Object responseObj) {
         ApiResponse apiResponse = new ApiResponse(
-                responseCode.getCode(),
                 responseCode.getMessage(),
                 responseObj);
         return new ResponseEntity<>(apiResponse, responseCode.getHttpStatus());

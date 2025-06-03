@@ -1,16 +1,9 @@
 package com.sagar.microservices.inventory.service;
 
-import com.sagar.microservices.inventory.dto.InventoryDto;
-import com.sagar.microservices.inventory.exception.InventoryServiceException;
-import com.sagar.microservices.inventory.exception.NotInStockException;
-import com.sagar.microservices.inventory.mapper.InventoryMapper;
 import com.sagar.microservices.inventory.model.Inventory;
 import com.sagar.microservices.inventory.repository.InventoryRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Page;
 
 import org.springframework.stereotype.Service;
 

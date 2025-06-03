@@ -1,11 +1,9 @@
 package com.sagar.microservices.inventory.controller;
 
-import com.sagar.microservices.inventory.dto.InventoryDto;
 import com.sagar.microservices.inventory.enums.ResponseCode;
 import com.sagar.microservices.inventory.response.ApiResponse;
 import com.sagar.microservices.inventory.response.InventoryServiceResponse;
 import com.sagar.microservices.inventory.service.InventoryService;
-import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
