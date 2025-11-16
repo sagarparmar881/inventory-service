@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: inventory-service
+
+  datasource:
+    url: jdbc:mysql://srv687.hstgr.io:3306/u529715207_OhFZeVXqwgFj
+    username: u529715207_UvRUMyouPzjn
+    password: D43MbIqFPRkK
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8082
