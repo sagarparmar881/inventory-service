@@ -3,9 +3,9 @@ spring:
     name: inventory-service
 
   datasource:
-    url: jdbc:mysql://srv687.hstgr.io:3306/u529715207_OhFZeVXqwgFj
-    username: u529715207_UvRUMyouPzjn
-    password: D43MbIqFPRkK
+    url: ${INVENTORY_SERVICE_DATABASE_URL}
+    username: ${INVENTORY_SERVICE_DATABASE_USERNAME}
+    password: ${INVENTORY_SERVICE_DATABASE_PASSWORD}
 
   jpa:
     hibernate:
